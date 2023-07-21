@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style1.css" as="style">
+    <link href="css/style1.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <center><div style="margin-top: 20px;" class="logo"><img src="logo.jpg" width="100px" height="100px"><img src="LOGOBUENO.jpg" width="300px" height="100px"></div></center>
+        <br>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="Inicio.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="vision.html">Vision y Mision</a>
+            <a href="index.html">Productos</a>
+            <a href="contacto.html">Contactos</a>
+               
+        </nav>
+    </div>
+
+  <style>
+    body {
+      background-color: orange;
+    }
+
+    /* Estilos para la pestaña */
+    .tab {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+    }
+    
+    /* Estilos para el contenido de la pestaña */
+    .tab-content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+    
+    /* Mostrar el contenido activo */
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Misión y Visión</h1>
+  
+  <!-- Pestañas -->
+  <div class="tab" onclick="toggleTab('vision')">Visión</div>
+  <div class="tab" onclick="toggleTab('mision')">Misión</div>
+  
+  <!-- Contenido de las pestañas -->
+  <div id="vision" class="tab-content">
+    <h2>Visión</h2>
+    <p>Descripción de la visión.</p>
+    <img src="ruta_de_la_imagen_vision.jpg" alt="Visión">
+  </div>
+  <div id="mision" class="tab-content">
+    <h2>Misión</h2>
+    <p>Descripción de la misión.</p>
+    <img src="ruta_de_la_imagen_mision.jpg" alt="Misión">
+  </div>
+
+  <script>
+    function toggleTab(tabName) {
+      var tabs = document.getElementsByClassName('tab-content');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+      }
+      document.getElementById(tabName).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
